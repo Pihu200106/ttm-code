@@ -1,0 +1,56 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 40px;
+  background-color: #111827;
+  color: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-left {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+}
+
+.navbar-link {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.navbar-link:hover {
+  color: #60a5fa;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.role-badge {
+  background-color: #2563eb;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.logout-btn {
+  background-color: #ef4444;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.logout-btn:hover {
+  background-color: #dc2626;
+}

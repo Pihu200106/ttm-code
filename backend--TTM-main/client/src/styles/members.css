@@ -1,0 +1,60 @@
+.members-container {
+  padding: 40px;
+  background-color: #f3f4f6;
+  min-height: 100vh;
+}
+
+.members-title {
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #111827;
+}
+
+.members-grid {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(280px, 1fr)
+  );
+  gap: 25px;
+}
+
+.member-card {
+  background-color: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: 0.3s;
+}
+
+.member-card:hover {
+  transform: translateY(-5px);
+}
+
+.member-name {
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: #111827;
+}
+
+.member-email {
+  color: #6b7280;
+  margin-bottom: 10px;
+}
+
+.member-role {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+}
+
+.admin-role {
+  background-color: #ef4444;
+}
+
+.member-role-badge {
+  background-color: #2563eb;
+}
