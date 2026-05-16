@@ -16,7 +16,7 @@ function Members() {
       const token = localStorage.getItem("token");
 
       const response = await axios.get(
-        "http://localhost:5000/users",
+        `${process.env.REACT_APP_API_URL}/users`,
         {
           headers: {
             Authorization: token,

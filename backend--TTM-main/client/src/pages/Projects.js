@@ -22,7 +22,7 @@ function Projects() {
       const token = localStorage.getItem("token");
 
       const response = await axios.get(
-        "http://localhost:5000/projects",
+        `${process.env.REACT_APP_API_URL}/projects`,
         {
           headers: {
             Authorization: token,
@@ -43,7 +43,7 @@ function Projects() {
       const token = localStorage.getItem("token");
 
       await axios.post(
-        "http://localhost:5000/projects",
+        `${process.env.REACT_APP_API_URL}/projects`,
         {
           title,
           description,
@@ -69,7 +69,7 @@ function Projects() {
       const token = localStorage.getItem("token");
 
       await axios.delete(
-        `http://localhost:5000/projects/${id}`,
+        `${process.env.REACT_APP_API_URL}/projects/${id}`,
         {
           headers: {
             Authorization: token,

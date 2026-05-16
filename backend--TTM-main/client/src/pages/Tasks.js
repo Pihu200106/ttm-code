@@ -38,7 +38,7 @@ function Tasks() {
       const token = localStorage.getItem("token");
 
       const response = await axios.get(
-        "http://localhost:5000/tasks",
+        `${process.env.REACT_APP_API_URL}/tasks`,
         {
           headers: {
             Authorization: token,
@@ -57,7 +57,7 @@ function Tasks() {
       const token = localStorage.getItem("token");
 
       const response = await axios.get(
-        "http://localhost:5000/users",
+        `${process.env.REACT_APP_API_URL}/users`,
         {
           headers: {
             Authorization: token,
@@ -76,7 +76,7 @@ function Tasks() {
       const token = localStorage.getItem("token");
 
       const response = await axios.get(
-        "http://localhost:5000/projects",
+        `${process.env.REACT_APP_API_URL}/projects`,
         {
           headers: {
             Authorization: token,
@@ -97,7 +97,7 @@ function Tasks() {
       const token = localStorage.getItem("token");
 
       await axios.post(
-        "http://localhost:5000/tasks",
+        `${process.env.REACT_APP_API_URL}/tasks/${id}`,
         {
           title,
           description,
@@ -137,7 +137,7 @@ function Tasks() {
       const token = localStorage.getItem("token");
 
       await axios.put(
-        `http://localhost:5000/tasks/${id}`,
+        `${process.env.REACT_APP_API_URL}/tasks/${id}`,
         {
           status,
         },
@@ -159,7 +159,7 @@ function Tasks() {
       const token = localStorage.getItem("token");
 
       await axios.delete(
-        `http://localhost:5000/tasks/${id}`,
+        `${process.env.REACT_APP_API_URL}/tasks/${id}`,
         {
           headers: {
             Authorization: token,
